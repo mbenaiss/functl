@@ -55,8 +55,8 @@ type Response struct {
 }
 
 //LoadConfig load and parse config file
-func LoadConfig() (*Config, error) {
-	b, err := ioutil.ReadFile("config.yaml")
+func LoadConfig(filename string) (*Config, error) {
+	b, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return nil, fmt.Errorf("unable to read config file %w", err)
 	}

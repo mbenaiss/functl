@@ -14,7 +14,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func NewRouter() http.Handler {
-	cfg, err := LoadConfig()
+	cfg, err := LoadConfig("./serverless_function_source_code/api.yaml")
 	if err != nil {
 		panic(err)
 	}
