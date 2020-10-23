@@ -5,7 +5,7 @@ import (
 	"os/exec"
 
 	"github.com/mbenaiss/functl/api"
-	"github.com/mbenaiss/functl/cli/provider"
+	"github.com/mbenaiss/functl/provider"
 )
 
 type Client struct {

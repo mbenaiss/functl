@@ -12,9 +12,9 @@ import (
 	"github.com/rakyll/statik/fs"
 
 	"github.com/mbenaiss/functl/api"
-	"github.com/mbenaiss/functl/cli/provider"
-	"github.com/mbenaiss/functl/cli/provider/gcp"
-	_ "github.com/mbenaiss/functl/cli/statik"
+	"github.com/mbenaiss/functl/provider"
+	"github.com/mbenaiss/functl/provider/gcp"
+	_ "github.com/mbenaiss/functl/statik"
 )
 
 const usageText = `functl [cmd] <options>

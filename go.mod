@@ -1,8 +1,8 @@
-module github.com/mbenaiss/functl/cli
+module github.com/mbenaiss/functl
 
 go 1.15
 
-replace github.com/mbenaiss/functl/api => ../api
+replace github.com/mbenaiss/functl/api => ./api
 
 require (
 	github.com/mbenaiss/functl/api v0.0.0-20201023122001-0185f9285d42

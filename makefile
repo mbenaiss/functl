@@ -1,4 +1,3 @@
 build:
-	cd cli && \
-	statik -src=../api && \
+	statik -src=./api && \
 	go install 
