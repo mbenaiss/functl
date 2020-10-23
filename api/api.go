@@ -6,17 +6,15 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-
-	"github.com/mbenaiss/functl/config"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	router := newRouter()
+	router := NewRouter()
 	router.ServeHTTP(w, r)
 }
 
-func newRouter() http.Handler {
-	cfg, err := config.LoadConfig()
+func NewRouter() http.Handler {
+	cfg, err := LoadConfig()
 	if err != nil {
 		panic(err)
 	}
